@@ -1,0 +1,125 @@
+.link-wrap {
+    width: 100vw;
+    height: 6vh;
+    background-color: black;
+    color: rgb(181, 181, 181);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+ul {
+    width: 45vw;
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+.nav_button {
+    width: 75px;
+    display: none;
+    cursor: pointer;
+}
+ul li:hover {
+    color: black;
+    cursor: pointer;
+}
+nav {
+    width: 100px;
+    height: 6vh;
+    // display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+#menu {
+    transition: height 1000ms ease-in-out;
+}
+.menu-button:hover {
+    cursor: pointer;
+}
+.menu-close .menu-list {
+    display: none;
+}
+.menu-open{
+    width: 100vw;
+    height: 22vh;
+    color: white;
+    background: #212528;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.menu-close {
+    width: 0vw;
+}
+.menu-list {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 19.5vw;
+    font-size: 15px;
+    margin-bottom: 2vh;
+}
+h1 {
+    color: black;
+    font-size: 20px;
+    font-style: inherit;
+    font-family: 'Kaushan Script', cursive;
+}
+menu{
+    display: none;
+}
+a {
+    color: white;
+}
+.product_container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    .product_card {
+        border: 1px solid grey;
+        width: 20%;
+        min-width: 175px;
+        margin-bottom: 10px;
+        // height: 30vh;
+    
+        img {
+            width: 100%;
+        }
+    }
+}
+
+// @keyframes slideToRight {
+//     0% {
+//         margin-left: 0px;
+//     }
+//     100% {
+//         margin-left: 300px;
+//     }
+// }
+@media (max-width: 706px) {
+    ul {
+        display: none;
+    }
+    .nav_button {
+        display: block;
+    }
+    nav {
+        height: 5.5vh;
+        background: black;
+        // display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    // menu{
+    //     display: block;
+    // }
+    h1{
+        font-size: 20px;
+    }
+    .product_card{
+        align-items: center;
+    }
+}
